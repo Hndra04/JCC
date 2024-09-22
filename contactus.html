@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project HTML Human And Computer Interaction</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar start-->
+    <div class="navbar">
+      <a href="home.html" class="navbar-logo"
+        ><span>JCC | Jockey Conference Center</span></a
+      >
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="event.html">Event</a>
+        <a href="price.html">Price</a>
+        <a href="contactus.html">Contact us</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="menu-icon"><i data-feather="menu"></i></a>
+      </div>
+    </div>
+    <!-- Navbar end-->
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="container">
+        <div class="content">
+            <h1>Inquiry Form</h1>
+            <br>
+            <span>
+                Thank you for considering Jockey Conference Centre as the 
+                destination for your upcoming event. We look forward to 
+                creating a memorable experience. Once you have completed 
+                all requirement fields below, it will be our pleasure to 
+                contact you to discuss a proposal.
+            </span>
+            <br>
+            <label for="name">Input your Name</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Input Your Name">
+            <br>
+            <label for="email">Input your E-mail</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Input Your E-Mail">
+            <br>
+            <label for="number">Input your Phone Number</label>
+            <br>
+            <input type="number" name="number" id="number" placeholder="Input Your Number">
+            <br>
+            <label for="detail">Detail</label>
+            <br>
+            <input type="text" name="detail" id="detail" class="detail" placeholder="Input More Detail">
+            <br>
+            <p>Preferred Contact Method:</p>
+            <input type="radio" name="prefer" id="phone">
+            <label for="phone">Phone Number</label>
+            <input type="radio" name="prefer" id="mail">
+            <label for="mail">E-Mail</label>
+            <br>
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement">I agree to terms and condition</label>
+            <br>
+            <button type="button" onclick="validateData()">Submit</button>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="credit">
+        <p>Jockey Conference Center Grogol</p>
+        <p>Jakarta Barat 11440</p>
+        <p>(021) 1234-5678</p>
+        <p>Jockey Conference Center. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer End-->
+
+    <!-- Feather -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Java Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
